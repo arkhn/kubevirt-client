@@ -1,3 +1,24 @@
+# IMPORTANT
+
+this is a fork of https://github.com/kubevirt/client-python at commit [f871473](https://github.com/kubevirt/client-python/commit/f8714731c6654f90df4e45aa29ca8c76ba1f9c43) because their automation use a non standard package version in setup.py
+
+```py
+# non standard version they use
+VERSION = "v1.7.0-alpha.0-15-g2adc20291a"
+# standard version
+VERSION = "v1.7.0-alpha.0-15"
+```
+
+this kind of version is not supported by setuptools since v66
+
+there's an [issue open](https://github.com/kubevirt/client-python/issues/60) on their repo to fix it but i wouldn't count on it to fix it quickly. The kind of version they used is considered deprecated since august 2014 as per this [PeP acceptance](https://mail.python.org/pipermail/distutils-sig/2014-August/024673.html) and [setuptools v66](https://pypi.org/project/setuptools/66.0.0/) dates from january 2023
+
+@lucienbertin
+
+now their readme
+
+-----
+
 # kubevirt-py
 This is KubeVirt API an add-on for Kubernetes.
 
