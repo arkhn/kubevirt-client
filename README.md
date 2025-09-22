@@ -13,6 +13,8 @@ this kind of version is not supported by setuptools since v66
 
 there's an [issue open](https://github.com/kubevirt/client-python/issues/60) on their repo to fix it but i wouldn't count on it to fix it quickly. The kind of version they used is considered deprecated since august 2014 as per this [PeP acceptance](https://mail.python.org/pipermail/distutils-sig/2014-August/024673.html) and [setuptools v66](https://pypi.org/project/setuptools/66.0.0/) dates from january 2023
 
+**DO NOT** delete branches looking like `v1.3`, they are used to target specific versions of the lib in the requirements.txt, like [here](https://github.com/arkhn/admin/pull/1115/commits/12cb1520539b8558351fa1d4e41c8e4397b443dd)
+
 @lucienbertin
 
 now their readme
